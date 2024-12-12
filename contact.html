@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Card</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e3f1f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* Full height */
+        }
+        .card {
+            display: flex;
+            width: 90%; /* Set card to take up 90% of the width */
+            max-width: 1200px; /* Max width for larger screens */
+            height: 80%; /* Adjust height to 80% of the page */
+            background-color: #333;
+            border-radius: 15px;
+            overflow: hidden;
+        }
+        .left-side {
+            background-color: #92c1c8;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex: 1;
+        }
+        .left-side img {
+            border-radius: 50%;
+            width: 100%; /* Take full width of the container */
+            max-width: 300px; /* Max width of image */
+            height: auto;
+            object-fit: cover; /* Ensure the image covers the container while maintaining aspect ratio */
+        }
+        .right-side {
+            padding: 40px;
+            color: #fff;
+            flex: 2;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .right-side h1 {
+            margin: 0;
+            font-size: 3vw; /* Font size will scale with screen size */
+            font-weight: bold;
+        }
+        .right-side p {
+            margin: 10px 0;
+            font-size: 1.5vw; /* Font size responsive */
+        }
+        .contact-info {
+            margin-top: 20px;
+        }
+        .contact-info p {
+            display: flex;
+            align-items: center;
+            font-size: 1.5vw; /* Responsive font size */
+        }
+        .icon {
+            margin-right: 15px;
+            font-size: 2vw; /* Icons size scales with text */
+        }
+    </style>
+</head>
+<body>
+
+<div class="card">
+    <div class="left-side">
+        <img src="https://as1.ftcdn.net/v2/jpg/04/51/93/58/1000_F_451935845_lE4bZerbquwym7k3go88BC9Z379HZVnb.jpg" alt="Profile Picture">
+    </div>
+    <div class="right-side">
+        <h1>CONTACT US</h1>
+        <p></p>
+
+        <div class="contact-info">
+            <p><span class="icon">📞</span> +123-456-7890</p>
+            <p><span class="icon">✉️</span> hello@quickbites.com</p>
+            <p><span class="icon">🌐</span> www.quickbites.com</p>
+            <p><span class="icon">🏠</span> 123 Anywhere St., Any City, ST 12345</p>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
